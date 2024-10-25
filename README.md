@@ -101,7 +101,7 @@ This repository contains the core description and configuration files for the Br
 
 If you want to control the Broverette using a PS4 controller, perform **SLAM** to create maps, or use **Nav2** and **AMCL** for autonomous navigation, please refer to the Broverette Navigation repository:
 
-[**Broverette Navigation** Repository](https://github.com/TheTacoBytes/Broverette_Navigation)
+[**Broverette Navq Repository**](https://github.com/TheTacoBytes/Broverette_Nav2)
 
 The **Broverette Navigation** repository is designed to be run on a laptop that communicates with the Pi 4 on the Broverette. This will run:
 
