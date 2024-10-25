@@ -75,7 +75,7 @@ If only one connection is initially displayed, press **Enter** to load the rest.
 3. **Go to the workspace root and build**:
    Navigate back to the workspace root and build the workspace using `colcon`:
    ```bash
-   cd ~/Broverette_ws
+   cd ~/broverette_ws
    colcon build
    ```
 4. **Source the workspace**:
