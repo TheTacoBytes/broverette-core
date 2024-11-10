@@ -1,6 +1,7 @@
 # Broverette
 
-https://github.com/user-attachments/assets/03323889-74ca-40c9-b6ba-a75158bd82f6
+![AckbotAutonomousNavigation_TestingROS2Nav2PathPlannerwithAMCL-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/1ad4cf02-6226-4928-b7bd-261f366181a4)
+
 
 ## Overview
 Broverette is a ROS 2 robot platform that handles core functionalities such as `cmd_vel`, `scan`, `odom`, and more. This repository contains the ROS 2 packages needed to control Broverette and interface with its sensors.
