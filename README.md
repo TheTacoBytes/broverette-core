@@ -1,6 +1,8 @@
 # Broverette
 
-![AckbotAutonomousNavigation_TestingROS2Nav2PathPlannerwithAMCL-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/1ad4cf02-6226-4928-b7bd-261f366181a4)
+
+https://github.com/user-attachments/assets/03eb77f4-70e2-457d-b0d2-3c569f0d67d5
+
 
 
 ## Overview
