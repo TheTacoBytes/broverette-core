@@ -28,7 +28,7 @@ You can find all the necessary parts in this Amazon list:
 - **/usb_cam**: Camera node.
 - **/vel_raw_pub**: Publishes raw velocity data.
 
-## Installation
+## Installation for PI (not your host pc)
 ### Prerequisites
 - ROS 2 Humble
 - A Raspberry Pi 4 With Ubuntu 22.04
@@ -52,7 +52,7 @@ Connect the Raspberry Pi to a monitor and sign in using the following credential
    
    2.**Launch nmtui**: In the terminal, type the following command to launch the Network Manager Text User Interface:
 ```bash
-nmtui
+sudo nmtui
 ```
    3.**Navigate the Menu**: Once the nmtui interface opens, you’ll be presented with three options:
 - Activate a connection
@@ -62,6 +62,7 @@ nmtui
 Use the arrow keys to select **Activate a connection** and press **Enter**.
 
 If only one connection is initially displayed, press **Enter** to load the rest. Then, use the arrow keys to select the desired network and enter the password.
+## Reboot the PI once connected to Wi-Fi, you can tell by a `*` being next to your Wi-Fi name.
 
 ### Clone the Repository and Set Up the Workspace
 
