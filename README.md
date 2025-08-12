@@ -37,7 +37,7 @@ You can find all the necessary parts in this Amazon list:
 From this link, you can download the **image (img)** file to flash onto the microSD card for the Raspberry Pi 4B 8GB. I recommend using [Etcher](https://etcher.balena.io/) for flashing the image.
 
 #### **Link**:
-[Ubuntu 22.04 Server Pi 4 IMG](https://drive.google.com/drive/folders/1WxypJMW6T0hi-66JYA1BB3ZOif5wu8fc?usp=sharing)
+[Ubuntu 22.04 Server Pi 4 IMG](https://drive.google.com/file/d/1JAQfjt6CJQ8ar5mfx1NBaADFMKxnY39N/view?usp=sharing)
 
 *I will make every effort to update the code in the image whenever changes are made. If for any reason I am unable to update it immediately, I will mention it here so that you can clone the latest version of the repository and rebuild accordingly.*
 
