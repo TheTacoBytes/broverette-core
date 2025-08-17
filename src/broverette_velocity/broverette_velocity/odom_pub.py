@@ -40,7 +40,7 @@ class OdomPublisher(Node):
         )
 
         # Create publisher for odom_raw
-        self.odom_publisher = self.create_publisher(Odometry, 'odom_raw', 50)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', 50)
 
         # Initialize variables
         self.last_time = self.get_clock().now()
@@ -58,7 +58,7 @@ class OdomPublisher(Node):
         linear_velocity_y = msg.linear.y * self.linear_scale_y
 
         # Calculate the steering angle and radius
-        steer_angle = linear_velocity_y
+        steer_angle = -linear_velocity_y
         if abs(steer_angle) < 1e-6:
             R = float('inf')  # Effectively means going straight
             angular_velocity_z = 0.0
@@ -115,6 +115,9 @@ class OdomPublisher(Node):
             0.0, 0.0, 0.0, 0.0, 0.0, float(0.0001)
         ]
 
+        # odom.twist.twist.linear.x = -odom.twist.twist.linear.x
+        # odom.twist.twist.linear.y = -odom.twist.twist.linear.x
+        # odom.twist.twist.angular.z = -odom.twist.twist.angular.z
         # Publish the odometry message
         self.odom_publisher.publish(odom)
 
