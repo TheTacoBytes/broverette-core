@@ -153,6 +153,7 @@ class Broverette_Driver(Node):
         gx, gy, gz = self.car.get_gyroscope_data()
         mx, my, mz = self.car.get_magnetometer_data()
         vx, vy, angular = self.car.get_motion_data()
+        vy = -vy
 
         # Publish IMU data
         imu.header.stamp = time_stamp.to_msg()
