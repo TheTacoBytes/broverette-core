@@ -40,7 +40,7 @@ class OdomPublisher(Node):
         )
 
         # Create publisher for odom_raw
-        self.odom_publisher = self.create_publisher(Odometry, 'odom_raw', 50)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', 50)
 
         # Initialize variables
         self.last_time = self.get_clock().now()

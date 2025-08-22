@@ -48,12 +48,23 @@ def generate_launch_description():
                 {'gain': 50},    
             ]
         ),
+        Node(
+            package='broverette_lidar_filter', 
+            executable='lidar_filter', 
+            name='lidar_filter',
+            output='screen'
+        ),
         # LIDAR node
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([
-                FindPackageShare('ldlidar_stl_ros2'), '/launch/ld19.launch.py'
-            ])
+        PythonLaunchDescriptionSource([
+            FindPackageShare('sllidar_ros2'), '/launch/sllidar_c1_launch.py'
+        ])
         ),
+         # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([
+        #         FindPackageShare('ldlidar_stl_ros2'), '/launch/ld19.launch.py'
+        #     ])
+        # ),
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -68,5 +79,6 @@ def generate_launch_description():
             name='battery_display',
             output='screen'
         ),
+   
     ])
 

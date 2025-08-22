@@ -223,7 +223,7 @@
   </joint>
 
   <!-- Camera Link -->
-  <link name="camera_link">
+  <!-- <link name="camera_link">
     <inertial>
       <origin xyz="-0.0022507 -5.8908E-06 -0.021168" rpy="0 0 0" />
       <mass value="0.22414" />
@@ -251,12 +251,12 @@
     <parent link="base_link" />
     <child link="camera_link" />
     <axis xyz="0 0 0" />
-  </joint>
+  </joint> -->
 
   <!-- Laser Link -->
   <link name="laser_link">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 1" rpy="0 0 0" />
       <mass value="0" />
       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
@@ -279,7 +279,8 @@
 
   <joint name="laser_joint" type="fixed">
     <!-- <origin xyz="0.012548 0 0.1311" rpy="0 0 0" /> -->
-    <origin xyz="0.049748 -0.0012 0.1165" rpy="0 0 0" />
+    <!-- <origin xyz="0.049748 -0.0012 0.1165" rpy="0 0 3.14159" /> -->
+    <origin xyz="0.049748 -0.0012 0.1165" rpy="3.14159 0 0" />
     <parent link="base_link" />
     <child link="laser_link" />
     <axis xyz="0 0 0" />
